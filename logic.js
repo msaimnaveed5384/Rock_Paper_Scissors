@@ -79,6 +79,10 @@ function PlayRound(humanChoice, computerChoice)
     }
 }
 
+function playGame()
+{
+    
+}
 const humanChoice=getHumanChoice();
 const computerChoice=getComputerChoice();
 
