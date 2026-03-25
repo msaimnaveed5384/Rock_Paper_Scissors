@@ -1,19 +1,20 @@
 let humanScore=0,computerScore=0;
-function getComputerChoice() {
+function getComputerChoice() 
+{
     let value;
     value = Math.random();
 
     if (value > 0.66) 
     { 
-        console.log("ROCK");
+        return "ROCK";
     } 
     else if (value > 0.33) 
     {
-        console.log("PAPER");
+        return "PAPER";
     } 
     else 
     {
-        console.log("SCISSORS");
+        return "SCISSORS";
     }
 }
 function getHumanChoice()
@@ -23,21 +24,23 @@ function getHumanChoice()
 
     if(user_value == "rock")
     {
-        console.log("ROCK");
+        return "ROCK";
     }
     else if(user_value == "paper")
     {
-        console.log("PAPER");
+        return "PAPER";
     }
     else if(user_value == "scissors")
     {
-        console.log("SCISSORS");
+        return "SCISSORS";
     }
 }
 
 function PlayRound(humanChoice,computerChoice)
 {
-
+    
 }
-getHumanChoice();
-getComputerChoice();
+const humanChoice=getHumanChoice();
+const computerChoice=getComputerChoice();
+
+PlayRound(humanChoice,computerChoice);
