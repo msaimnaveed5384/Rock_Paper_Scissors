@@ -45,26 +45,33 @@ function PlayRound(humanChoice, computerChoice)
     else if(humanChoice == "ROCK" && computerChoice == "SCISSORS")
     {
         console.log("ROCK beats SCISSORS. HUMAN WINS!");
+        humanScore++;
+       
     }
     else if(humanChoice == "ROCK" && computerChoice == "PAPER")
     {
         console.log("PAPER beats ROCK. COMPUTER WINS!");
+         computerScore++;
     }
     else if(humanChoice == "PAPER" && computerChoice == "ROCK")
     {
         console.log("PAPER beats ROCK. HUMAN WINS!");
+        humanScore++;
     }
     else if(humanChoice == "PAPER" && computerChoice == "SCISSORS")
     {
         console.log("SCISSORS beats PAPER. COMPUTER WINS!");
+         computerScore++;
     }
     else if(humanChoice == "SCISSORS" && computerChoice == "PAPER")
     {
         console.log("SCISSORS beats PAPER. HUMAN WINS!");
+        humanScore++;
     }
     else if(humanChoice == "SCISSORS" && computerChoice == "ROCK")
     {
         console.log("ROCK beats SCISSORS. COMPUTER WINS!");
+         computerScore++;
     }
     else
     {
