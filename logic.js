@@ -36,10 +36,42 @@ function getHumanChoice()
     }
 }
 
-function PlayRound(humanChoice,computerChoice)
+function PlayRound(humanChoice, computerChoice)
 {
-    
+    if(humanChoice == computerChoice)
+    {
+        console.log("TIE!");
+    }
+    else if(humanChoice == "ROCK" && computerChoice == "SCISSORS")
+    {
+        console.log("ROCK beats SCISSORS. HUMAN WINS!");
+    }
+    else if(humanChoice == "ROCK" && computerChoice == "PAPER")
+    {
+        console.log("PAPER beats ROCK. COMPUTER WINS!");
+    }
+    else if(humanChoice == "PAPER" && computerChoice == "ROCK")
+    {
+        console.log("PAPER beats ROCK. HUMAN WINS!");
+    }
+    else if(humanChoice == "PAPER" && computerChoice == "SCISSORS")
+    {
+        console.log("SCISSORS beats PAPER. COMPUTER WINS!");
+    }
+    else if(humanChoice == "SCISSORS" && computerChoice == "PAPER")
+    {
+        console.log("SCISSORS beats PAPER. HUMAN WINS!");
+    }
+    else if(humanChoice == "SCISSORS" && computerChoice == "ROCK")
+    {
+        console.log("ROCK beats SCISSORS. COMPUTER WINS!");
+    }
+    else
+    {
+        console.log("INVALID INPUT");
+    }
 }
+
 const humanChoice=getHumanChoice();
 const computerChoice=getComputerChoice();
 
